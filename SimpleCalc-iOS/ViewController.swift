@@ -16,9 +16,8 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func btnPressed(_ sender: Any) {
-//        NSLog("1 pressed")
-        print((sender as AnyObject).tag)
+    @IBAction func btnNumberPressed(_ sender: Any) {
+        print((sender as AnyObject).tag as Any)
     }
 }
 

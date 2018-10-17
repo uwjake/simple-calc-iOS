@@ -134,7 +134,7 @@ class ViewController: UIViewController {
         if calc.OpExpression == "" {
             // regular case
             //        print(calc.lastOp)
-            if calc.lastOp == "" && Double(dispayLabel.text!) != nil && currentOp != "FACT" {
+            if calc.lastOp == "" && Double(dispayLabel.text!) != nil && currentOp != "FACT" && currentOp != "CT"{
                 // store first number
                 calc.add(dispayLabel.text!, true)
             } else {
@@ -162,8 +162,14 @@ class ViewController: UIViewController {
     
     func reversePolishNotation(_ op: String) {
         let nums = calc.OpExpression.split(separator: " ")
+        print(nums)
         if nums.count > 0 && Double(nums[0]) != nil {
-            calc.add(String(nums[0]))
+            if (op != "CT"){
+                calc.add(String(nums[0]), true)
+
+            } else {
+                 determineOp(op, String(nums[0]), "op")
+            }
             for i in 1..<nums.count {
                 if Double(nums[i]) != nil {
                     determineOp(op, String(nums[i]), "op")

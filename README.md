@@ -24,9 +24,7 @@ Chain operation is available:
 
 Press 1 + 2 + 3 = 
 
-Press 5 FACT =
-
-Must press "=" to see result
+Must press "=" to see result, but no need for FACT operation
 
 After press "=", calc will be stopped, if enter numbers now, new calc will init.
 

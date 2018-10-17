@@ -20,6 +20,8 @@ Note: my enter button is SPC, which stands for Space.
 
 ## 1. Base Case: +, -, ...
 
+Chain operation is available:
+
 Press 1 + 2 + 3 = 
 
 Press 5 FACT =
